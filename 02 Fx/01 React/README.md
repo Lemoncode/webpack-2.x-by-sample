@@ -2,7 +2,7 @@
 
 In this demo we will add support for React.
 
-We will start from sample _01 Styles / 03 SASS_, install React locally, update `students.js` to `students.jsx` and include some basic rendering.
+We will start from sample _01 Styles / 04 SASS_, install React locally, update `students.js` to `students.jsx` and include some basic rendering.
 
 Summary steps:
  - Install [React](https://facebook.github.io/react/) as a local dependency.
@@ -14,7 +14,7 @@ Summary steps:
 
 ## Prerequisites
 
-You will need to have [Node.js](https://nodejs.org/en/) installed in your computer. If you want to follow this step guide you will need to take sample _03 SASS_ as starting point.
+You will need to have [Node.js](https://nodejs.org/en/) installed in your computer. If you want to follow this step guide you will need to take sample _04 SASS_ as starting point.
 
 ## Steps
 

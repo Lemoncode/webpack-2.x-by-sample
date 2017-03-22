@@ -2,7 +2,7 @@
 
 In this sample we are going to introduce Linting. This is a technique which you can analyse code for potential errors, so that can help you to make less mistakes.
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
  - Installing ESLint.
@@ -15,7 +15,7 @@ Summary steps:
 
 ## Prerequisites
 
-Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _03 SASS_.
+Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _043 SASS_.
 
 ## steps
 

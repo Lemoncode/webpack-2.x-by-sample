@@ -121,7 +121,7 @@ Summary steps:
  files required by Bootstrap.
  - Check results.
 
-### 03 SASS
+### 04 SASS
 
 In this demo we rename our css file to scss extension and add a simple SASS variable. We will learn how to add a loader that can
 make the SASS preprocess and then chain it to our css / style pipe.
@@ -134,13 +134,13 @@ Summary steps:
  - Install a SASS preprocessor loader.
  - Add this preprocessor to the pipe (update `webpack.config.js`).
 
-### 04 Handling Images
+### 05 Handling Images
 
 In this demo we are going to include images in our project in two flavours: via
 JavaScript and via HTML. On the JavaScript side we will see is something
 straightforward (using the same plugins we used for fonts), for the HTML we will use a new loader html-loader
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
 - Add two images to our project.
@@ -154,7 +154,7 @@ Summary steps:
 
 In this demo we will add support for TypeScript.
 
-We will start from sample _01 Styles/03 SASS_, install TypeScript locally,
+We will start from sample _01 Styles/04 SASS_, install TypeScript locally,
 configure a tsconfig file, add some ts like, install awesome-typescript-loader and apply it to webpackconfig.
 
 Summary steps:
@@ -169,7 +169,7 @@ Summary steps:
 
 In this demo we will add support for React.
 
-We will start from sample _01 Styles / 03 SASS_, install React locally, update `students.js` to `students.jsx` and include some basic rendering.
+We will start from sample _01 Styles / 04 SASS_, install React locally, update `students.js` to `students.jsx` and include some basic rendering.
 
 Summary steps:
  - Install [React](https://facebook.github.io/react/) as a local dependency.
@@ -181,7 +181,7 @@ Summary steps:
 
 In this sample we are going to create a simple Angular 1.x sample (es6 based).
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
  - Installing Angular 1.x libraries.
@@ -214,7 +214,7 @@ Summary steps:
 
 In this sample we are going to introduce Linting. This is a technique which you can analyse code for potential errors, so that can help you to make less mistakes.
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
  - Installing ESLint.
@@ -227,7 +227,7 @@ Summary steps:
 
 On of the most interest features that ships Webpack 2 is Tree Shaking: this allows to remove from a destination bundle the exports that are not in use by the project, reducing dramatically the site of our bundle.
 
-We will start from sample _01 Styles/03 SASS_ and we are going to create a simple sample in ES6:
+We will start from sample _01 Styles/04 SASS_ and we are going to create a simple sample in ES6:
 
 - A calculator module where we create an export per basic operation (sum, substract, mul, div..).
 
