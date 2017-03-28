@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
+var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var CompressionPlugin = require('compression-webpack-plugin');
 var commonConfig = require('./base.webpack.config.js');
@@ -11,7 +12,7 @@ const env = {
   API_URL: JSON.stringify('https://webpack-sample-prod-lemoncode.herokuapp.com/api/students')
 }
 
-module.exports = function () {
+module.exports = (function () {
   return webpackMerge(commonConfig, {
     devtool: 'cheap-module-source-map',
 
@@ -68,4 +69,4 @@ module.exports = function () {
       })
     ],
   });
-}
+})();
