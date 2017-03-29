@@ -2,7 +2,7 @@
 
 In this sample we are going to create a simple Angular 1.x sample (es6 based).
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
  - Installing Angular 1.x libraries.
@@ -17,7 +17,7 @@ Summary steps:
 
 ## Prerequisites
 
-Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _03 SASS_.
+Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _04 SASS_.
 
 ## steps
 

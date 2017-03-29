@@ -2,7 +2,7 @@
 
 In this demo we will add support for TypeScript.
 
-We will start from sample _01 Styles/03 SASS_, install TypeScript locally,
+We will start from sample _01 Styles/04 SASS_, install TypeScript locally,
 configure a tsconfig file, add some ts like, install awesome-typescript-loader and apply it to webpackconfig.
 
 Summary steps:
@@ -17,7 +17,7 @@ Summary steps:
 
 ## Prerequisites
 
-Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _03 SASS_.
+Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _04 SASS_.
 
 ## steps
 

@@ -2,7 +2,7 @@
 
 On of the most interest features that ships Webpack 2 is Tree Shaking: this allows to remove from a destination bundle the exports that are not in use by the project, reducing dramatically the site of our bundle.
 
-We will start from sample _01 Styles/03 SASS_ and we are going to create a simple sample in ES6:
+We will start from sample _01 Styles/04 SASS_ and we are going to create a simple sample in ES6:
 
 - A calculator module where we create an export per basic operation (sum, substract, mul, div..).
 
@@ -14,7 +14,7 @@ We will use webpack's 2 tree shaking and check that we end up having a bundle th
 
 ## Prerequisites
 
-Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _03 SASS_.
+Prerequisites, you will need to have nodejs installed in your computer. If you want to follow this step guides you will need to take as starting point sample _04 SASS_.
 
 ## steps
 

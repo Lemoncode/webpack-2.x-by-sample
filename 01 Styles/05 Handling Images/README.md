@@ -1,9 +1,9 @@
-# 04 Handling Images
+# 05 Handling Images
 
 In this demo we are going to include images in our project in two flavours: via JavaScript and via HTML.
 On the HTML side we will see is quite straightforward (using the same plugins we used for fonts), but for the Javascript we will use a new configuration for the loader _url-loader_.
 
-We will start from sample _01 Styles/03 SASS_.
+We will start from sample _01 Styles/04 SASS_.
 
 Summary steps:
  - Add two images to our project.
@@ -15,7 +15,7 @@ Summary steps:
 
 ## Prerequisites
 
-You will need to have nodejs installed in your computer. If you want to follow the steps of this guide you must take as starting point the sample _03 SASS_.
+You will need to have nodejs installed in your computer. If you want to follow the steps of this guide you must take as starting point the sample _04 SASS_.
 
 ## Steps
 
@@ -75,7 +75,7 @@ $blue-color: teal;
 
 - And run `npm start`. We should obtain the following result in our browser:
 
-![result logo 1](../../99%20Readme%20Resources/01%20Styles/04%20Handling%20Images/result%20logo%201.png)
+![result logo 1](../../99%20Readme%20Resources/01%20Styles/05%20Handling%20Images/result%20logo%201.png)
 
 - That's fine but, what if we already have the image referenced from a JavaScript file and inserted into the HTML using a `<div>` element with a given `id`?
 
@@ -154,8 +154,8 @@ module.exports = {
 
 - Now if run the app (`npm start`) we can check that both logo images are being shown.
 
-![result logo 2](../../99%20Readme%20Resources/01%20Styles/04%20Handling%20Images/result%20logo%202.png)
+![result logo 2](../../99%20Readme%20Resources/01%20Styles/05%20Handling%20Images/result%20logo%202.png)
 
 - Finally, if we open the developer tools in our browser we can see that a `<img>` has been inserted under the `<div>` element, and also that its `src` attribute has changed:
 
-![browser console](../../99%20Readme%20Resources/01%20Styles/04%20Handling%20Images/browser%20console.png)
+![browser console](../../99%20Readme%20Resources/01%20Styles/05%20Handling%20Images/browser%20console.png)
