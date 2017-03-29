@@ -8,13 +8,20 @@ var basePath = __dirname;
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
+    extensions: ['.js', '.ts']
   },
   entry: {
-    app: './students.jsx',
+    app: './index.ts',
     vendor: [
-      'react',
-      'react-dom',
+      'core-js',
+      'reflect-metadata',
+      'zone.js',
+      '@angular/core',
+      '@angular/platform-browser',
+      '@angular/platform-browser-dynamic',
+      '@angular/common',
+      '@angular/compiler',
+      'rxjs',
     ],
     vendorStyles: [
       '../node_modules/bootstrap/dist/css/bootstrap.css',
@@ -27,9 +34,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'awesome-typescript-loader',
       },
       {
         test: /\.scss$/,
@@ -37,14 +44,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: '[name]__[local]___[hash:base64:5]',
-                camelCase: true,
-              },
-            },
+            { loader: 'css-loader', },
             { loader: 'sass-loader', },
           ],
         }),
@@ -77,8 +77,15 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
       },
+      {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: 'raw-loader',
+      },
     ],
   },
+  // For development https://webpack.js.org/configuration/devtool/#for-development
+  devtool: 'inline-source-map',
   devServer: {
     port: 8080,
   },
@@ -87,7 +94,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html', //Name of file in ./dist/
       template: 'index.html', //Name of template in ./src
-			hash: true,
+      hash: true,
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -101,5 +108,9 @@ module.exports = {
       disable: false,
       allChunks: true,
     }),
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      path.join(__dirname, 'src')
+    ),
   ],
 };
