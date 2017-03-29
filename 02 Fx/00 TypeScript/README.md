@@ -97,11 +97,8 @@ document.write(messageToDisplay);
 
 ```
 
-<<<<<<< HEAD
 - Here we can see the result of instalation the jquery typings
 
-=======
->>>>>>> 6ea897d912be084d5ef1020c4f1120117bc1ba65
 ![jquery typings](../../99%20Readme%20Resources/02%20Fx/00%20TypeScript/jquery%20typings.png)
 
 - Next we'll type our function in *`averageService.ts`*:
