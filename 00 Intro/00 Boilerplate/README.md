@@ -16,7 +16,7 @@ Summary steps:
 
 ## Prerequisites
 
-Install [Node.js and npm](https://nodejs.org/en/) (v6.x) if they are not already installed on your computer.
+Prerequisites, you will need to have [Node.js and npm](https://nodejs.org/en/) (v. 6.3.1) if they are not already installed on your computer.
 
 > Verify that you are running at least node v6.x.x and npm 3.x.x by running `node -v` and `npm -v` in a terminal/console window. Older versions may produce errors.
 
