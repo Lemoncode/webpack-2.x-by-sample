@@ -1,15 +1,18 @@
 module.exports = {
-  entry: ['./students.js'],
+  entry: ['./students.ts'],
   output: {
     filename: 'bundle.js',
+  },
+  resolve: {
+    extensions: ['.js','.ts'],
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-      },
+        loader: 'awesome-typescript-loader',
+      }
     ],
   },
   devServer: {
