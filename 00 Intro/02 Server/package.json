@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Front-End Lemoncode Master, Bundle Modules, Webpack Demo 02 Server",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"
