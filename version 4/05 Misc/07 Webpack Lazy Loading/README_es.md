@@ -83,7 +83,7 @@ $('body').css('background-color', 'lightSkyBlue');
 - document.write(messageToDisplay);
 ```
 
-- Cree la función _getComponent_, cargue el módulo _averageService_ de forma diferida y devuelva el elemento div de forma asíncrona con la puntuación media:
+- Creamos la función _getComponent_, cargamos el módulo _averageService_ de forma diferida y devolvemos el elemento div de forma asíncrona con la puntuación media:
 
 ```diff
 $('body').css('background-color', 'lightSkyBlue');
@@ -114,7 +114,7 @@ $('body').css('background-color', 'lightSkyBlue');
 + };
 ```
 
-- Cree un botón para manejar el evento de click y cargar la puntuación media:
+- Creamos un botón para manejar el evento de click y cargar la puntuación media:
 
 ```diff
 ...
