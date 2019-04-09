@@ -1,40 +1,40 @@
 # 06 Lazy Loading
 
-In this demo we will load bundles asynchronously via npm.
+En este ejemplo cargaremos paquetes de forma asíncrona a través de npm.
 
-We will start from sample _00 intro/05 jquery_.
+Partiremos del ejemplo _00 intro/05 jquery_.
 
-Summary steps:
+Pasos resumidos:
 
-- Prerequisites:
-  - nodejs packages must be installed
-  - (Optional) starting point _00 intro/05 jquery_
-- Install @babel/plugin-syntax-dynamic-import package via npm
-- Configure the .babelrc configuration file
-- Change the synchronous module import on students.js and load the averageService module lazily.
-- Add the container div on index.html
+- Requisitos previos:
+  - Los paquetes nodejs deben estar instalados
+  - (Opcional) punto de partida _00 intro/05 jquery_
+- Instalar el paquete @babel/plugin-syntax-dynamic-import a través de npm
+- Configurar el fichero de configuración de Babel (_.babelrc_)
+- Cambiar la importación sincrónica del módulo en students.js y cargar el módulo averageService de forma diferida (_lazy loading_).
+- Añadir el contenedor div en index.html
 
-# Steps to build it
+# Pasos para realizarlo
 
-## Prerequisites
+## Requisitos previos
 
-Prerequisites, you will need to have nodejs installed (at least v 8.9.2) on your computer. If you want to follow this guide steps you will need to take as starting point sample _00 intro/05 jquery_.
+Necesitará tener _nodejs_ instalado (al menos v 8.9.2) en su ordenador. Si desea seguir los pasos de esta guía, deberá tomar como punto de partida el ejemplo _00 intro/05 jquery_.
 
-## Steps
+## Pasos
 
-- `npm install` to install previous sample packages:
+- `npm install` para instalar los paquetes del ejemplo anterior:
 
 ```bash
 npm install
 ```
 
-- Let's start by downloading the @babel/plugin-syntax-dynamic-import library via npm. In this case we will execute the following command on the command prompt: `npm install --save-dev @babel/plugin-syntax-dynamic-import`.
+- Empecemos por descargar la biblioteca _@babel/plugin-syntax-dynamic-import_ a través de npm. En este caso ejecutaremos el siguiente comando en la línea de comandos: `npm install --save-dev @babel/plugin-syntax-dynamic-import`.
 
 ```
 npm install --save-dev @babel/plugin-syntax-dynamic-import
 ```
 
-It automatically adds that entry to our _package.json_.
+Esto añade automáticamente esa entrada a nuestro _package.json_.
 
 ### ./package.json
 
@@ -52,7 +52,7 @@ It automatically adds that entry to our _package.json_.
   },
 ```
 
-- Now we will configure the babel plugin syntax dynamic import at the plugin section of the _.babelrc_ file:
+- Ahora configuraremos la importación dinámica en la sección de plugins del archivo _.babelrc_:
 
 ### ./.babelrc
 
@@ -70,7 +70,7 @@ It automatically adds that entry to our _package.json_.
 }
 ```
 
-- Now it's ready to be used. Just to test it, let's change the synchronous import on the students.js file. Let's import the averageService module lazily when button clicked.
+- Ahora está listo para ser usado. Sólo para probarlo, cambiemos la importación sincrónica en el archivo _students.js_. Importemos el módulo _averageService_ de forma diferida cuando se pulse el botón.
 
 ### ./students.js
 
@@ -83,7 +83,7 @@ $('body').css('background-color', 'lightSkyBlue');
 - document.write(messageToDisplay);
 ```
 
-- Create getComponent function load the averageService module lazily, and return div element async with the average score:
+- Cree la función _getComponent_, cargue el módulo _averageService_ de forma diferida y devuelva el elemento div de forma asíncrona con la puntuación media:
 
 ```diff
 $('body').css('background-color', 'lightSkyBlue');
@@ -103,7 +103,7 @@ $('body').css('background-color', 'lightSkyBlue');
 +   );
 ```
 
-- Create handleOnClick function will call the getComponent function and append the average score to container:
+- La función _handleOnClick_ llamará a la función _getComponent_ y añadirá la puntuación media al contenedor:
 
 ```diff
 ...
@@ -114,7 +114,7 @@ $('body').css('background-color', 'lightSkyBlue');
 + };
 ```
 
-- Create a button to handle on click event and load the average score:
+- Cree un botón para manejar el evento de click y cargar la puntuación media:
 
 ```diff
 ...
@@ -124,7 +124,7 @@ $('body').css('background-color', 'lightSkyBlue');
 + document.getElementById("container").append(button);
 ```
 
-Then, our _students.js_ file look like this:
+Ahora, nuestro archivo _students.js_ tiene este aspecto:
 
 ### ./students.js
 
@@ -158,7 +158,7 @@ document.getElementById("container").append(button);
 
 ```
 
-- Finally we need to add the _div_ container in _index.html_:
+- Finalmente necesitamos añadir el contenedor _div_ en _index.html_:
 
 ### ./index.html
 
@@ -180,9 +180,9 @@ document.getElementById("container").append(button);
 
 ```
 
-## Running and Testing it
+## Ejecutando y Probando
 
-- Now we can just execute the app (`npm start`) and check how the averageService bundle load on handle button click event (checking the browser network dev tool).
+- Ahora podemos simplemente ejecutar la aplicación (`npm start`) y comprobar cómo se carga el paquete _averageService_ al pulsar el botón _Lazy loading sample_ (comprobándolo en la pestaña _network_ de las herramientas de desarrollo del navegador).
 
 ```bash
 npm start
